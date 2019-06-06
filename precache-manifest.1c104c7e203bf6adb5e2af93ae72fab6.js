@@ -12,23 +12,23 @@ self.__precacheManifest = [
     "url": "/restaurant-website/static/js/runtime~main.bb5d1460.js"
   },
   {
-    "revision": "f527cb5890ea410a2e74",
-    "url": "/restaurant-website/static/js/main.f527cb58.chunk.js"
+    "revision": "734bd540c2128a2ee340",
+    "url": "/restaurant-website/static/js/main.734bd540.chunk.js"
   },
   {
-    "revision": "7a38e549e7081876db02",
-    "url": "/restaurant-website/static/js/2.7a38e549.chunk.js"
+    "revision": "80cd8df3483b72d481a6",
+    "url": "/restaurant-website/static/js/2.80cd8df3.chunk.js"
   },
   {
-    "revision": "f527cb5890ea410a2e74",
+    "revision": "734bd540c2128a2ee340",
     "url": "/restaurant-website/static/css/main.0a4fe327.chunk.css"
   },
   {
-    "revision": "7a38e549e7081876db02",
+    "revision": "80cd8df3483b72d481a6",
     "url": "/restaurant-website/static/css/2.0cae5bb2.chunk.css"
   },
   {
-    "revision": "d03ef668e0a56194b6ab02dbfe6f75d7",
+    "revision": "39a5f2a06472d7cbd6fe8a7964c0f2cc",
     "url": "/restaurant-website/index.html"
   }
 ];
