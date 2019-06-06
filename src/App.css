@@ -1,33 +1,329 @@
-.App {
+
+
+body{
+
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Srisakdi', cursive;
+background-color: #E2E1E0;
+
+}
+
+
+
+
+
+.back{
+color:white;
+  background-image: url('./background.jpg');
+background-position: center;
+background-repeat: no-repeat;
+
+margin-top: 20px;
+padding-bottom: 10px;
+border-radius: 20px;
+}
+
+
+
+.logo{
+margin:0px;
+width:60px;
+height: 60px;
+
+
+}
+
+.logo-name{
+
+font-weight: bold;
+font-size: 23px;
+color:#F37021;
+}
+
+
+
+
+.nav{
+
+background-color:#1C1C1C !important;
+padding-bottom: 10px;
+
+}
+
+
+.mr-auto{
+
+color: white;
+
+margin: auto;
+margin-top: 10px;
+}
+
+.body-box{
+margin-top: 10px;
+
+}
+
+
+
+
+.search {
+
+margin:auto;
+
+
+}
+
+.remove{
+
+border:none;
+
+}
+
+
+
+.remove:focus{
+
+transition: all .2s;
+border-bottom: 2px solid red;
+
+
+}
+
+
+label{
+
+font-weight: bold;
+font-size: 25px;
+
+
+}
+input:focus{
+
+outline: none;
+
+
+}
+
+
+
+input {
+border-radius: 10px;
+height: 30px;
+
+
+}
+.btn{
+
+  font-family: oxygen;
+  text-transform: uppercase;
+  font-size: 16px;
+font-weight: bold;
+background :transparent;
+color:white;
+border:1px solid #F94415;
+width:125px;
+margin-left: 10px;
+margin-top: 3px;
+text-align: center;
+}
+
+.btn:hover{
+transition:all 1s;
+background-color: #F94415;
+color:white;
+
+
+}
+
+.btn{
+
+outline: none;
+
+}
+
+
+.cols{
+
+margin-top: 20px;
+
+
+}
+
+
+.space-top{
+
+margin-top: 50px;
+
+}
+
+.inner-box{
+
+
+
+box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+margin-bottom:50px;
+
+padding-bottom: 20px;
+}
+
+
+
+.recipe-btn{
+
+margin-left: 0px;
+color:black;
+font-size: 12px;
+width:110px;
+
+}
+
+
+.recipe-btn:hover{
+border-radius: 10px;
+  border:none;
+}
+
+h5{
+
+  font-weight: bold;
+
+color:red;
+margin-top: 10px;
+
+
+}
+
+
+.img-box{
+
+text-align: center;
+
+
+}
+
+.img-body{
+
+margin-top: 20px;
+width: 320px;
+height: 180px;
+
+
+-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+
+}
+
+
+.img-body:hover{
+-webkit-transition: all 0.7s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -ms-transform: scale(1.1, 1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1, 1.1);
+  /* Safari */
+  transform: scale(1.1, 1.1);
+}
+
+
+
+
+
+.box-1{
+
+}
+
+
+
+.box-2{
+
+
+font-size: 30px;
+font-weight: bold;
+
+
+
+}
+
+.link{
+
+    color:black !important;
+}
+
+
+
+
+.link:hover{
+
+text-decoration: none;
+
+}
+
+
+.details{
+
+text-align: center;
+
+font-weight: bolder;
+color: #F37021;
+}
+
+.details-img{
+height: 300px;
+border-radius: 20px;
+width:540px;
+text-align: center;
+margin-top: 20px;
+
+}
+
+
+hr{
+
+border-top: 3px solid #F37021;
+
+}
+
+
+.box-2-url a {
+
+text-decoration: none;
+color:#212529;
+
+}
+
+.box-2-url a:hover{
+
+color:red;
+
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+ .search {
   text-align: center;
-}
+position: relative;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ 
   }
-  to {
-    transform: rotate(360deg);
+  .btn{
+
+font-size: 15px;
+width: 100px;
+
   }
+
 }
+

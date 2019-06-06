@@ -1,15 +1,23 @@
 {
   "name": "restaurant-website",
   "version": "0.1.0",
+  "webpage": "https://danish0313.github.io/restaurant-website",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.1",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.1",
+    "react-loader-spinner": "^2.3.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
