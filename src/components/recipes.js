@@ -38,7 +38,6 @@ details : data.recipes[0]
 
 })
 
-console.log(this.state.details);
 
 }
 
@@ -59,19 +58,19 @@ return (
 <Container>
 
 <Row>
-<Col md={12}> <h1 className="details"> Recipes details..... </h1> </Col>
+<Col xl={12} md={12} sm={12} xs={12}> <h1 className="details"> Recipes details..... </h1> </Col>
 
 </Row>
 
 <Row style={{'marginTop': '40px'}}>
 
-<Col md={6} className="box-1"> 
+<Col xl={6} md={12} sm={12} xs={12} className="box-1"> 
 
  <Link to="/">   <Button variant="primary" size="sm" className="recipe-btn">    GO BACK!  </Button> </Link> 
 
   <Image className="details-img" src={this.state.details.image_url} alt={this.state.details.title} />     </Col>
 
-<Col md={6} className="box-2"> 
+<Col xl={6} md={12} sm={12} xs={12} className="box-2"> 
 
 <div className="box-2-title"> Tittle of Recipe: <br/>
 
