@@ -208,8 +208,8 @@ text-align: center;
 .img-body{
 
 margin-top: 20px;
-width: 320px;
-height: 180px;
+max-width:100% ;
+ height:auto;
 
 
 -webkit-transition: all 0.3s ease-in-out;
@@ -278,9 +278,9 @@ color: #F37021;
 }
 
 .details-img{
-height: 300px;
+max-width:100% ;
+ height:auto;
 border-radius: 20px;
-width:540px;
 text-align: center;
 margin-top: 20px;
 
