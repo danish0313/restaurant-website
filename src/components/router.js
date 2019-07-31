@@ -1,27 +1,50 @@
-import React , {Component} from 'react';
+import React , {Component , lazy, Suspense } from 'react';
 
-import {Route , Switch , BrowserRouter}  from 'react-router-dom';
+import {Switch , BrowserRouter , Redirect}  from 'react-router-dom';
 
-import Recipes from './recipes.js';
-import App from '../App.js';
+import Oval from './oval.js';
 
+const App = lazy(() => import("../App.js"));
+const Recipes = lazy(() => import("./recipes.js"));
 
 class Router extends Component {
 
+
+componentDidMount() {
+
+	console.log(this.props);
+}
 render() {
 
-return (
 
+
+
+
+
+
+
+return (
+	<div>
 <BrowserRouter>
+<Suspense fallback={ <center style={{marginTop:50}}><Oval/></center>}>
+
+
+
 <Switch>
 
-<Route exact path="/" component={App}/>
-<Route path="/recipes/:id" component={Recipes}/>
+<App exact path="/" />
 
+
+{localStorage.data ?  <Recipes path="/recipes/:id" /> : '' 
+ }
+<Redirect to ="/" />
 </Switch>
+
+</Suspense>
 
 </BrowserRouter>
 
+</div>
 	)
 
 
@@ -30,6 +53,6 @@ return (
 
 
 }
-	
+
 
 export default Router;

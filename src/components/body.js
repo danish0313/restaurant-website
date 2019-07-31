@@ -20,14 +20,14 @@ return (
 
 
 
-{this.props.Recipe.map( values =>  
+{this.props.Recipe.map( values =>
 
 
 <Col md={6} xs={12} xl={4} sm={12} className="cols" key={values.recipe_id} >
 
-<Col md={12} className="inner-box">
+<Col md={12} sm={12} xl={12} xs={12} className="inner-box">
 
-  <div className="img-box"> <Image className="img-body" src={values.image_url} rounded />
+  <div className="img-box"> <Image className="img-body " src={values.image_url} rounded />
 
   </div>
 
@@ -39,8 +39,8 @@ return (
                     state     : { recipe : values.title     }
 
 
-   }}  className="link">   <Button variant="primary" size="sm" className="recipe-btn">    VIEW RECIPE  </Button>  </Link>
- 
+   }} >   <Button  size="sm" className="recipe-btn">    VIEW RECIPE  </Button>  </Link>
+
 </Col>
 
 </Col>
@@ -48,7 +48,7 @@ return (
 )}
 
 
-</Row> 
+</Row>
 
 </Container>
 

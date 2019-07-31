@@ -10,13 +10,17 @@ import Oval from './components/oval.js';
 
 import Body from "./components/body.js";
 
- 
+import   Pager from "./components/pagination/pagination";
+
+
 class App extends Component {
 
 
  state = {
 
-data : []
+data : [],
+current_page : 1,
+postperpage : 5
 
 
   };
@@ -33,7 +37,7 @@ e.preventDefault();
 
 const name = e.target.elements.recipename.value;
 
-const API_CALL = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${name}&count=6`) ;
+const API_CALL = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${name}&count=50`) ;
 
 
 const result = await API_CALL.json();
@@ -46,7 +50,55 @@ data : result.recipes
 
 });
 
-console.log(this.state.data)
+
+
+}
+
+
+
+// parsing the localStorage
+
+componentDidMount = () => {
+
+const data = localStorage.getItem("data") ;
+
+  const recipes = JSON.parse(data);
+
+
+
+  this.setState({
+
+  data : recipes
+
+
+  });
+
+}
+
+
+// storng Recipes to localStorage
+
+componentDidUpdate = () => {
+
+  const data = JSON.stringify(this.state.data);
+
+  localStorage.setItem("data", data);
+
+
+}
+
+paginate = (page) => {
+
+
+  this.setState({
+
+current_page :  page
+
+
+  });
+
+
+
 }
 
 
@@ -54,8 +106,13 @@ console.log(this.state.data)
 
   render() {
 
+// get current-Recipes
 
+const indexlast = this.state.current_page * this.state.postperpage ;
 
+const  indexfirst =  indexlast - this.state.postperpage;
+
+const current_recipes = this.state.data.slice(indexfirst, indexlast ) ;
 
     return (
 
@@ -66,10 +123,12 @@ console.log(this.state.data)
 
  <Search  Recipe={this.Recipe} />
 
-
-
    {this.state.data.length === 0 ? <center style={{marginTop:50}}><Oval/> <br/>
-    <h3 style={{ fontFamily: 'oxygen' , color: '#1C1C1C'}}>PLEASE ENTER YOUR RECIPE NAME! </h3></center> : <Body Recipe={this.state.data}  /> }
+ <h3 style={{ fontFamily: 'oxygen' , color: '#ffff'}}>PLEASE ENTER YOUR RECIPE NAME! </h3></center> :
+    <Body Recipe={current_recipes}  /> }
+
+
+<Pager postperpage={this.state.postperpage} paginate={this.paginate} totalrecipes={this.state.data.length} />
 
 </React.Fragment>
 

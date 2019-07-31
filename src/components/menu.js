@@ -1,5 +1,5 @@
 
-import React , {Component} from 'react';
+import React from 'react';
 import {Navbar, Nav } from "react-bootstrap";
 import logo from '../logo.png';
 import {Link} from 'react-router-dom';
@@ -23,10 +23,10 @@ return (
      <Nav className="mr-auto">
 <h2>   Recipe Search!  </h2>
 
- 
+
     </Nav>
-   
-    
+
+
   </Navbar>
 
 </header>
@@ -40,7 +40,3 @@ return (
 }
 
 export default  Menu;
-
-
-
-
