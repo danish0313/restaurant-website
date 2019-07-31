@@ -1,6 +1,6 @@
 import React , {Component , lazy, Suspense } from 'react';
 
-import {Switch , BrowserRouter , Redirect}  from 'react-router-dom';
+import {Switch , HashRouter , Redirect}  from 'react-router-dom';
 
 import Oval from './oval.js';
 
@@ -25,7 +25,7 @@ render() {
 
 return (
 	<div>
-<BrowserRouter>
+<HashRouter>
 <Suspense fallback={ <center style={{marginTop:50}}><Oval/></center>}>
 
 
@@ -35,14 +35,14 @@ return (
 <App exact path="/" />
 
 
-{localStorage.data ?  <Recipes path="/recipes/:id" /> : '' 
+{localStorage.data ?  <Recipes path="/recipes/:id" /> : ''
  }
 <Redirect to ="/" />
 </Switch>
 
 </Suspense>
 
-</BrowserRouter>
+</HashRouter>
 
 </div>
 	)
