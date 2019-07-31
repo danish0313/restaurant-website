@@ -56,22 +56,6 @@ data : result.recipes
 
 
 
-// parsing the localStorage
-
-
-
-
-// storng Recipes to localStorage
-
-componentDidUpdate = () => {
-
-  const data = JSON.stringify(this.state.data);
-
-  localStorage.setItem("data", data);
-
-
-}
-
 paginate = (page) => {
 
 
