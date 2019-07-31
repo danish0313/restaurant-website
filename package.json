@@ -1,7 +1,7 @@
 {
   "name": "restaurant-website",
   "version": "0.1.0",
-  "webpage": "https://danish0313.github.io/restaurant-website",
+  "homepage": "https://danish0313.github.io/restaurant-website",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",

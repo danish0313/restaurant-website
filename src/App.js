@@ -58,22 +58,7 @@ data : result.recipes
 
 // parsing the localStorage
 
-componentDidMount = () => {
 
-const data = localStorage.getItem("data") ;
-
-  const recipes = JSON.parse(data);
-
-
-
-  this.setState({
-
-  data : recipes
-
-
-  });
-
-}
 
 
 // storng Recipes to localStorage
