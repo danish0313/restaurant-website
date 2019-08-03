@@ -10,16 +10,8 @@ const Recipes = lazy(() => import("./recipes.js"));
 class Router extends Component {
 
 
-componentDidMount() {
 
-	console.log(this.props);
-}
 render() {
-
-
-
-
-
 
 
 
@@ -35,8 +27,8 @@ return (
 <App exact path="/" />
 
 
-{localStorage.data ?  <Recipes path="/recipes/:id" /> : ''
- }
+ <Recipes path="/recipes/:id" />
+
 <Redirect to ="/" />
 </Switch>
 

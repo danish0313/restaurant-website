@@ -275,6 +275,7 @@ width: 300px;
 .pager li a:hover {
 
   background-color: red;
+  color: white;
 }
 
 

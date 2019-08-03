@@ -20,11 +20,7 @@ for (let i = 1; i <= Math.ceil(props.totalrecipes / props.postperpage); i++) {
 
         {  page.map(number => (
      <Pagination.Item onClick={ () => props.paginate(number)} key={number}>
-
-          <a href='/' onClick={ () => props.paginate(number)} >
           {number}
-          </a>
-
      </Pagination.Item>
 ))}
 
