@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "90fb70aca876912184b7",
-    "url": "/restaurant-website/static/css/4.0a2d1e75.chunk.css"
+    "revision": "975290ad91f4ca042593",
+    "url": "/restaurant-website/static/css/4.f54e121d.chunk.css"
   },
   {
     "revision": "e9f79d6080c532b1f283",
     "url": "/restaurant-website/static/js/0.e9f79d60.chunk.js"
   },
   {
-    "revision": "bfeb75678af4cac260db",
-    "url": "/restaurant-website/static/js/runtime~main.bfeb7567.js"
+    "revision": "db338b358cde9a37b714",
+    "url": "/restaurant-website/static/js/runtime~main.db338b35.js"
   },
   {
     "revision": "95db12eb063c5d00aeef20d5cdd6800c",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/restaurant-website/static/js/main.c41b6f10.chunk.js"
   },
   {
-    "revision": "90fb70aca876912184b7",
-    "url": "/restaurant-website/static/js/4.90fb70ac.chunk.js"
+    "revision": "975290ad91f4ca042593",
+    "url": "/restaurant-website/static/js/4.975290ad.chunk.js"
   },
   {
     "revision": "024bf16ad1bb527a8752",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/restaurant-website/static/css/3.901a8de3.chunk.css"
   },
   {
-    "revision": "f2a2d6537471095b9e93aa80abd9f363",
+    "revision": "f0b45e8b46f666c61104b34aa5d16e29",
     "url": "/restaurant-website/index.html"
   }
 ];
