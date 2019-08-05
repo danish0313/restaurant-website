@@ -28,6 +28,9 @@ postperpage : 5
 
 
 
+
+
+
 Recipe = async(e) => {
 
  const API_KEY = '8c009e936441b08ba9484ac72953b872';
@@ -43,10 +46,6 @@ const API_CALL = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY
 const result = await API_CALL.json();
 
 
-// for local
-const recipe = JSON.stringify(result.recipes);
-
-localStorage.setItem('data' , recipe);
 
 
 this.setState({
@@ -59,6 +58,8 @@ data : result.recipes
 
 
 }
+
+
 
 
 

@@ -11,8 +11,9 @@ padding: 0px;
 box-sizing: border-box;
 font-family: 'Srisakdi', cursive;
 background-color: #E2E1E0;
+height: 100% auto;
+width:100% auto;
 
-width:100%;
 }
 
 
@@ -381,7 +382,7 @@ height: auto;
 
   .img-body {
 
-    width: 400px;
+    width: 270px;
   }
 
 
